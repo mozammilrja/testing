@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"); */
+
+/* :root {
+  @apply .light;
+} */
+
+
+@font-face {
+	font-family: 'zai';
+	/* src: url("https://jeepers.social/wp-content/themes/Avada/font/swiss-721-bold-bt-70711.ttf");  */
+  src: local('./fonts'), url("./fonts/zai-TributeToCaselli-Pantelegraph.ttf") format('truetype');
+	font-weight: bold; 
+}
+
+.dark {
+  --color-bg-primary: #2d3748;
+  --color-bg-secondary: #283141;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-accent: #81e6d9;
+}
+
+.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-accent: #2b6cb0;
+}
+
+
+
+body {
+  /* font-family: 'Share Tech', sans-serif; */
+  font-family: 'zai' !important;
+   margin: 0;
+    max-width: 100%;
+  /* text-shadow: 8px 8px 10px #0000008c; */
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000); */
+  background-image: url("./assets/images/background.png");
+}
+
+
+
+
+.pattern{
+ background-image: "url('https://img.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg?t=st=1655760437~exp=1655761037~hmac=6de5d9bc7d85c6fa12673191f87354bdc8a6435e9b5ec8cad9abd00ff60e2c6c&w=900')",
+}
+
+
+
+
+
+/* a {
+  
+  text-decoration: none !important;
+} */
