@@ -31,7 +31,7 @@ function App() {
         <ul class="flex items-center gap-6 text-sm">
           <li>
             <a class="text-white transition hover:text-white/75" href="/">
-              About
+              Abouttttttttttttt
             </a>
           </li>
 
