@@ -1,8 +1,7 @@
 import React,{useEffect} from "react";
 import {useFormik} from "formik"
-import * as Yup from 'yup';
 import { useHistory } from "react-router-dom";
-import { Accordion, Form, Button } from "react-bootstrap";
+import {Form } from "react-bootstrap";
 import axios from "axios"
 
 
@@ -22,28 +21,6 @@ const HackerForm = () => {
 
       const formik = useFormik({
         initialValues: initialdata,
-        // validationSchema: Yup.object().shape({
-        //     name: Yup.string()
-        //       .min(2, 'Too Short!')
-        //       .max(20, 'Too Long!')
-        //       .required('Required'),
-        //       company_name: Yup.string()
-        //       .min(2, 'Too Short!')
-        //       .max(50, 'Too Long!')
-        //       .required('Required'),
-        //       github_link: Yup.string()
-        //       .min(2, 'Too Short!')
-        //       .max(50, 'Too Long!')
-        //       .required('Required'),
-        //       contact_address: Yup.string()
-        //       .min(2, 'Too Short!')
-        //       .max(50, 'Too Long!')
-        //       .required('Required'),
-        //       audit_services: Yup.string()
-        //       .min(2, 'Too Short!')
-        //       .max(50, 'Too Long!')
-        //       .required('Required'),
-        //     email: Yup.string().email('Invalid email').required('Required')}),
         onSubmit:async(values, { resetForm })=>{
             resetForm();
                 const {data} = await axios.post("https://0xbugbytes.azurewebsites.net/hacker",
@@ -65,7 +42,7 @@ const HackerForm = () => {
       
       })
       
-      const {values, errors, handleSubmit , handleChange} = formik;
+      const {values, handleSubmit , handleChange} = formik;
 
   return (
     <>

@@ -2,13 +2,14 @@ import React from 'react'
 import "./footer.css"
 import Brand from '../../assets/images/home/logo.png'
 import Imm from '../../assets/images/home/footer-logo.png'
-import { AiOutlineReddit } from "react-icons/ai";
+import Bricks from '../../assets/images/home/brick-2.png'
+
 import { FaRedditAlien } from "react-icons/fa";
 import {
   FaDiscord,
   FaTelegramPlane,
 } from "react-icons/fa/";
-import { ImTwitter,ImReddit } from "react-icons/im";
+import { ImTwitter} from "react-icons/im";
 
 
 
@@ -16,15 +17,17 @@ const Footer = () => {
   return (
     <>
  
-<footer class="container pt-10">
+<footer class="container" id='footer'>
 <div class=" text-center">
+<div class="mx-auto mt-16">
+  <div><img src={Bricks} alt="" /></div>
+</div>
 <div className='img-fluid center-block brand-logo'>
-
-  <img className='py-10' src={Brand} style={{maxWidth:"20%"}}  />
+  <img className='py-10' src={Brand} style={{maxWidth:"20%"}}  alt="" />
   <h5 class="text-white font-sm">
 Powered by
 </h5>
-<img className='' src={Imm} style={{maxWidth:"20%",paddingBottom:'25px'}}  />
+<img className='' src={Imm} style={{maxWidth:"20%",paddingBottom:'25px'}}  alt=""/>
   </div>
 
 
@@ -33,28 +36,42 @@ Powered by
 Partner up with DeFi’s greatest minds. Join BugBytes Bounty Platform today to save yourself from the nightmare that hacking is.
 </p>
 
-<div className='row pt-5'>
-  <div className='col-md-12 '>
-<ul  className='icon-footer '>
-<li>
-      <FaDiscord color='#fff' size='10%'/>
-    </li>
-   
-    <li>
-      <FaTelegramPlane color='#fff' size='10%'/>
-    </li>
-    <li>
-      <ImTwitter color='#fff' size='10%'/>
-    </li>
-    <li>
-      <FaRedditAlien color='#fff' size='10%'/>
-    </li>
-</ul>
-  </div>
-</div>
+
+
+<div class="flex items-center justify-center h-16 py-16">
+    <ul class="flex items-center gap-5 text-sm">
+            <li>
+              <a class="text-white transition hover:text-white/75" href="/">
+             < FaDiscord color='#fff' size='40px'/>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-white transition hover:text-white/75" href="/">
+              < FaTelegramPlane color='#fff' size='40px' />
+              </a>
+            </li>
+
+            <li>
+              <a class="text-white transition hover:text-white/75" href="/">
+              < ImTwitter color='#fff' size='40px'/>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-white transition hover:text-white/75" href="/">
+              < FaRedditAlien color='#fff' size='40px' />
+              </a>
+            </li>
+
+          </ul>
+
+      
+    </div>
+
 
 </div>
-  <div class="py-16  sm:px-6 lg:px-8">
+  <div class=" sm:px-6 lg:px-8">
   <div class="grid grid-cols-5 divide-x border-color: rgb(107 114 128)">
   <div> <p class="text-xs text-center text-white lg:text-center">
  AOUT US
@@ -73,12 +90,10 @@ OUR PARTNER
 CONTACT US
   </p></div>
 </div>
-    <div class="pt-8 mt-12 border-t border-white/20">
-      <div class="">
+    <div class="pt-3 mt-12 border-t border-white/20">
         <p class="text-xs text-center text-white lg:text-center">
            &copy; 2022. IMMUNEBYTES,ALL RIGHT RESERVED.
         </p>
-      </div>
     </div>
   </div>
 </footer>

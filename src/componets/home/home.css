@@ -24,15 +24,6 @@
 }
 
 
-
-ul.icon-footer li {
-    float: left;
-   
-}
-
-ul.icon-footer li svg {
-    display: initial;
-}
 /* after */
 
 /* accordian */
@@ -74,4 +65,15 @@ ul.icon-footer li svg {
 
 .joinus {
     padding: 5% 0 0 0;
+}
+
+
+input.w-full.p-2.text-lg {
+    background: transparent;
+    border: 3px solid #000;
+    color: #fff;
+}
+
+.stripe-input input::placeholder {
+    color: yellow !important;
 }

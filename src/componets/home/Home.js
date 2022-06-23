@@ -1,19 +1,13 @@
-import React,{useEffect} from "react";
+import React,{} from "react";
 import {useFormik} from "formik"
-import * as Yup from 'yup';
 import { useHistory } from "react-router-dom";
-
 import axios from "axios"
-import {Row ,Col} from 'react-bootstrap';
-import { Link,  useParams,useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './home.css'
 import { Accordion, } from "react-bootstrap";
 import Logo_1 from '../../assets/images/home/image-1.png'
 import Logo_2 from '../../assets/images/home/image-2.png'
 import Brick_1 from '../../assets/images/home/brick-1.png'
-import Bricks from '../../assets/images/home/brick-2.png'
-import faq from '../../assets/images/home/faqbox.png'
-import background from '../../assets/images/home/brick-1.png'
 import Launch from '../../assets/images/home/launch.png'
 import Buttons_img from '../../assets/images/home/buttons.png'
 import Program_button from '../../assets/images//home//button-landing.png'
@@ -50,7 +44,7 @@ const formik = useFormik({
 
 })
 
-const {values, errors, handleSubmit , handleChange} = formik;
+const {values, handleSubmit , handleChange} = formik;
 
 
   
@@ -77,12 +71,12 @@ style={{ backgroundImage: `url(${Program_button})`,backgroundRepeat:'no-repeat' 
         </Link>
 
 
-<div className='joinus'>
+<div className='joinus' style={{marginTop:'5%'}}>
 <span className='bug-bounty-sub-heading'>JOIN US</span>
 </div>
         <div className='row pt-10'>
           <div className='col-md-6 ' style={{borderRight:'5px solid gray'}}>      
-          <img className='img-fluid hacker-img ' src={Logo_1} />
+          <img className='img-fluid hacker-img ' src={Logo_1} alt="" />
           <div>
             <h1  className='text-[30px]'>For hackers</h1>
             <p className='text-xl text-[#f1c40f]'>web bug bounty plateform to get rid of vulnerabilities befor anyone even knows they exist.</p>
@@ -94,7 +88,7 @@ style={{ backgroundImage: `url(${Program_button})`,backgroundRepeat:'no-repeat' 
           </div>
         </div>
           <div className='col-md-6'>
-          <img className='img-fluid hacker-img' src={Logo_2} />
+          <img className='img-fluid hacker-img' src={Logo_2} alt="" />
           <div>
             <h1 className='text-[30px]'>For projects</h1>
             <p className='text-xl text-[#f1c40f]'>web bug bounty plateform to get rid of vulnerabilities befor anyone even knows they exist.</p>
@@ -275,19 +269,13 @@ style={{ backgroundImage: `url(${Program_button})`,backgroundRepeat:'no-repeat' 
             name="name"
           />
       <span class="absolute inset-y-0 inline-flex items-center right-0">
-           <img src={Launch} />
+           <img src={Launch} alt="" />
           </span>
     </form>
     </div>
     </div>
   </div>
 </div>
-<div class="container mx-auto mt-16">
-<div class="grid grid-rows">
-  <div><img src={Bricks} alt="" /></div>
-</div>
-</div>
-
   </section>
     </>
   )

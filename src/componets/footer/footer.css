@@ -11,15 +11,7 @@
     border-radius: 20%;
 }
 
-.stripe-input input::placeholder {
-    /* color: yellow !important; */
-    background: transparent !important;
-}
 
 
 
 
-input#email {
-    background: transparent;
-    border: 3px solid black;
-}

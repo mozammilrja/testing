@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { Navbar, Container, Nav, Dropdown, NavDropdown } from "react-bootstrap";
-import { Link,  useParams,useRouteMatch,useHistory } from "react-router-dom";
+import React, {  } from "react";
+import { Link } from "react-router-dom";
 import './header.css'
 import Brand from '../../assets/images/home/logo.png'
-import Buttons_img from '../../assets/images/home/nav-btn.png'
 import Nav_1 from '../../assets/images/home/nav-1.png'
 import Nav_2 from '../../assets/images/home/nav-2.png'
 
@@ -12,15 +10,17 @@ import Nav_2 from '../../assets/images/home/nav-2.png'
 
 const Header = () => {
 
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const showDropdown = (e)=>{
-    setShow(!show);
-}
-const hideDropdown = (e) => {
-    setShow(false);
-}
+//   const showDropdown = (e)=>{
+//     setShow(!show);
+// }
+// const hideDropdown = (e) => {
+//     setShow(false);
+// }
 
+
+ // eslint-disable-next-line
   return (
     <>
     
@@ -29,7 +29,7 @@ const hideDropdown = (e) => {
     <div class="flex items-center justify-between h-16">
       <div class="md:flex md:items-center">
         <Link class=" text-teal-600" to="/">
-           <img src ={Brand} style={{maxWidth:"50%"}} />
+           <img src ={Brand} style={{maxWidth:"50%"}} alt="" />
         </Link>
       </div>
       <div class="hidden md:block">
@@ -74,7 +74,7 @@ const hideDropdown = (e) => {
             class="px-2 py-2.5 text-sm font-bold text-white"
             href="/"
           >
-           <img src= {Nav_1} />
+           <img src= {Nav_1}  alt=""/>
           </a>
 
           <div class="hidden sm:flex">
@@ -82,7 +82,7 @@ const hideDropdown = (e) => {
                class="px-2 py-2.5 text-sm font-bold text-white "
               href="/"
             >
-           <img src= {Nav_2} />
+           <img src= {Nav_2} alt="" />
             </a>
           </div>
         </div>
