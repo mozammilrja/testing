@@ -162,7 +162,7 @@ function App() {
     <div
       class="inline-block pb-1 mt-4 font-medium text-blue-600 border-b border-blue-500 "
     >
-      Find out more
+      Find out
       <span aria-hidden="true">&rarr;</span>
     </div>
   </div>
