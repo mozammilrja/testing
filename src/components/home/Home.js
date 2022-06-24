@@ -1,16 +1,6 @@
 import React,{} from "react";
-import {useFormik} from "formik"
-import { useHistory } from "react-router-dom";
-import axios from "axios"
-import { Link } from "react-router-dom";
 import './home.css'
-import { Accordion, } from "react-bootstrap";
-import Logo_1 from '../../assets/images/home/image-1.png'
-import Logo_2 from '../../assets/images/home/image-2.png'
-import Brick_1 from '../../assets/images/home/brick-1.png'
-import Launch from '../../assets/images/home/launch.png'
-import Buttons_img from '../../assets/images/home/buttons.png'
-import Program_button from '../../assets/images//home//button-landing.png'
+
 
 const Home = () => {
   return (
