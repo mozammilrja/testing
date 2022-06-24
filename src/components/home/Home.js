@@ -1,46 +1,17 @@
 import React,{} from "react";
-import {useFormik} from "formik"
-import { useHistory } from "react-router-dom";
-import axios from "axios"
+
 import { Link } from "react-router-dom";
 import './home.css'
-import { Accordion, } from "react-bootstrap";
 import Logo_1 from '../../assets/images/home/image-1.png'
 import Logo_2 from '../../assets/images/home/image-2.png'
 import Brick_1 from '../../assets/images/home/brick-1.png'
-import Launch from '../../assets/images/home/launch.png'
 import Buttons_img from '../../assets/images/home/buttons.png'
 import Program_button from '../../assets/images//home//button-landing.png'
 
 
 
 const Home = () => {
-  const history = useHistory();
-  const initialdata = {
-    email:"",
-  
-}
-const formik = useFormik({
-  initialValues: initialdata,
-  onSubmit:async(values, { resetForm })=>{
-      resetForm();
-          const {data} = await axios.post("https://0xbugbytes.azurewebsites.net/hacker",
-          {
-    
-            email:values.email,
-      
-          },
-          )
-          if(data){
-            console.log(data,'data');
-              history.push("/");
-          }
-  
-  }
 
-})
-
-const {values, handleSubmit , handleChange} = formik;
 
 
   
@@ -113,28 +84,7 @@ style={{ backgroundImage: `url(${Program_button})`,backgroundRepeat:'no-repeat' 
           
         </div>
     <div  className='stripe-input'  style={{ backgroundImage: `url(${Brick_1})`,backgroundRepeat:'no-repeat'}}>
-<div className='container '>
-  <div className='row'>
-  <div className='col-md-6'>
-    <p className='text-xl mt-4 text-[#f1c40f]'>web bug bounty plateform to get rid of vulnerabilities befor</p>
-    </div>
-    <div className='col-md-6'>
-    <form className='py-4 relative'  onSubmit={handleSubmit}>
-    <input className='backg'
-            type="email"
-            class="w-full p-2  text-lg"
-            placeholder="Enter email"
-            value={values.name}
-            onChange={handleChange}
-            name="name"
-          />
-      <span class="absolute inset-y-0 inline-flex items-center right-0">
-           <img src={Launch} alt="" />
-          </span>
-    </form>
-    </div>
-    </div>
-  </div>
+
 </div>
   </section>
     </>
