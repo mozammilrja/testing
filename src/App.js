@@ -1,14 +1,15 @@
+import React from 'react'
 import './App.css';
 
 import "./fonts/zai-TributeToCaselli-Pantelegraph.ttf";
-
 import RouteComponent from "./routes/RouteComponent"
-function App() {
+
+const App = () => {
   return (
     <div>
-     <RouteComponent />
+    <RouteComponent/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
