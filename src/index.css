@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"); */
+
+/* :root {
+  @apply .light;
+} */
 
 
 @font-face {
 	font-family: 'zai';
+	/* src: url("https://jeepers.social/wp-content/themes/Avada/font/swiss-721-bold-bt-70711.ttf");  */
   src: local('./fonts'), url("./fonts/zai-TributeToCaselli-Pantelegraph.ttf") format('truetype');
 	font-weight: bold; 
 }

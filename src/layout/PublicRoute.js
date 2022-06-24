@@ -1,8 +1,7 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import Footer from '../components/footer/Footer'
-import Header from '../components/header/Header'
-
+import Footer from '../componets/footer/Footer'
+import Header from '../componets/header/Header'
 
 
 function PublicRoute({ component: Component, ...args }) {
