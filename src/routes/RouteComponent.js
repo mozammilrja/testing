@@ -14,10 +14,8 @@ const Index = () => {
   return (
     <div>
     <Switch>
-
     <PublicRoute  path="/"  component={Home} exact />
     </Switch>
-    
     </div>
   )
 }
