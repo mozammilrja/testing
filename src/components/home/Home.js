@@ -63,18 +63,7 @@ style={{ backgroundImage: `url(${Program_button})`,backgroundRepeat:'no-repeat' 
           </div>
         </div>
 
-        <div className='col-md-12 pt-20'>
-    <h3 className='bug-bounty-sub-heading'>bug bounty and  web 3.0 </h3>
-    <p  className='text-lg px-4 text-[#f1c40f]'>
-    The Web3 security revolution, this new paradigm shift in information security is so significant that it deserves newer more advanced methods of security. Traditional website and app bug bounty platforms have been successful in the old-world model but there is a massive difference between the existing bug bounties and the new era of Web 3.0 bugs associated with blockchains and crypto.
-      </p>
-    <p  className='text-lg px-4 text-[#f1c40f]'>
-    In the era of Decentralised Finance, Web 3.0 bug bounties take on the critical nature of being associated with actual monetary value, not just software bugs. With DeFi, billions of dollars in user funds are locked in smart contracts, visible and accessible to all. The stakes are pretty high!
-      </p>
-    <p  className='text-lg px-4 text-[#f1c40f]'>
-    Vulnerabilities in code represent a possibility of a direct loss of users’ money. Bug bounty programs are open invitations to security researchers to find those vulnerabilities in exchange for a reward. Secure smart contracts, save funds, and get paid doing it!
-      </p>
-    </div>
+
  </div>
 
   </section>
